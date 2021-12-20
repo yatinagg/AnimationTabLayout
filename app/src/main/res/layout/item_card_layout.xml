@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    app:cardCornerRadius="30dp"
+    tools:background="#FEFEFE">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/image_view"
+        android:background="@drawable/rounded_shape"
+        android:contentDescription="Image" />
+    <TextView
+        android:id="@+id/label_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        tools:text="A" />
+
+    <TextView
+        android:id="@+id/label_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        tools:text="♠" />
+
+    <TextView
+        android:id="@+id/label_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:rotation="180"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        tools:text="A" />
+</androidx.cardview.widget.CardView>
